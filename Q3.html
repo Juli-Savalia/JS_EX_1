@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // WAf to find the 2nd largest Element in the array 
+        const secLar = () => {
+            let arr = [34, 5, 94, 76, 35, 21, 6, 67];
+            let max = 0;
+            let secmax = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+                else if (arr[i] > secmax && arr[i] < max) {
+                    secmax = arr[i];
+                }
+            }
+            console.warn(max);
+            console.warn(secmax);
+        }
+        secLar();
+    </script>
+</body>
+
+</html>

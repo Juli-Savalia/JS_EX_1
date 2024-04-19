@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 2. Write a javascript program array sorted ascending order usig for loop.
+        // let arr1 : -[3, 12, 10, 8, 7];
+        // ans: -[3, 7, 8, 10, 12]
+
+        const sortArray = () => {
+            let arr1 = [3, 12, 10, 8, 7];
+            console.log("Original Array is : ", arr1);
+            for (let i = 0; i < arr1.length; i++) {
+                for(let j = 0 ; j<arr1.length ; j++)
+                {
+                    if(arr1[i] < arr1[j])
+                    {
+                        let temp;
+                        temp = arr1[i];
+                        arr1[i] = arr1[j];
+                        arr1[j] = temp;
+                    }
+                }
+            }
+            console.log(arr1);
+        }
+        sortArray();
+    </script>
+</body>
+
+</html>

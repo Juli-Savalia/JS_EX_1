@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Write a javascript program new array insert element array using for loop.
+        // Example :- 
+        // let arr = [10,20,30,40,50];
+        // let value = 25
+        // let pos = 2;
+        // ans :- [10,20,25,30,40,50]
+        const InsArr = () => {
+            let arr = [1, 23, 5, 76, 42];
+            let new_arr = [];
+            let new_ele = 44;
+            let pos = 3;
+
+            for (let i = 0; i < pos; i++) {
+                new_arr[i] = arr[i];
+            }
+            new_arr[pos] = new_ele;
+            for (let i = pos; i < arr.length; i++) {
+                new_arr[i + 1] = arr[i];
+            }
+            console.warn(new_arr);
+        }
+        InsArr();
+    </script>
+</body>
+
+</html>
